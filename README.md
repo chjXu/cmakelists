@@ -1,18 +1,24 @@
 # CMakeLists
 # 0. 编译
-> -S	指定源文件根目录，必须包含一个CMakeLists.txt文件
-> -B	指定构建目录，构建生成的中间文件和目标文件的生成路径
-> -D	指定变量，格式为-D <var>=<value>，-D后面的空格可以省略
+-S	指定源文件根目录，必须包含一个CMakeLists.txt文件
+
+-B	指定构建目录，构建生成的中间文件和目标文件的生成路径
+
+-D	指定变量，格式为-D <var>=<value>，-D后面的空格可以省略
+
 > cmake -S . -B build -DCMAKE_BUILD_TYPE=Debug
 
 
 # 1. 指定 cmake 最小版本
 > cmake_minimum_required(VERSION 3.10)
 
-# 2. 设置项目名称，它会引起两个变量 demo_BINARY_DIR 和 demo_SOURCE_DIR;
-# 同时， cmake自动定义了两个等价的变量 PROJECT_BINARY_DIR 和 PROJECT_SOURCE_DIR.
-project(test)
-project(test LANGUAGE C CXX CUDA)
+# 2. 设置项目名称
+它会引起两个变量 demo_BINARY_DIR 和 demo_SOURCE_DIR;
+
+同时， cmake自动定义了两个等价的变量 PROJECT_BINARY_DIR 和 PROJECT_SOURCE_DIR.
+
+> project(test)
+> project(test LANGUAGE C CXX CUDA)
 
 
 # 3. 设置编译类型， add_library 默认生成的是静态库
