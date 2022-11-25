@@ -20,21 +20,28 @@
 > project(test LANGUAGE C CXX CUDA)
 
 
-# 3. 设置编译类型， add_library 默认生成的是静态库
-add_library(utils STATIC ./test/utils.cc)
-add_library(utils SHARED ./test/utils.cc)
+# 3. 设置编译类型
+add_library 默认生成的是静态库
+> add_library(utils STATIC ./test/utils.cc)
+
+> add_library(utils SHARED ./test/utils.cc)
 
 
 # 5. 设置变量
-# 5.1 set 直接设置变量的值
+## 5.1 set 直接设置变量的值
 
-# 5.2 set 环境变量
-set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
-set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
-set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
-# set(CMAKE_C_FLAGS )
-set(CMAKE_CXX_FLAGS "-std=c++11")
-add_definitions("-std=c++11")
+## 5.2 set 环境变量
+> set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+
+> set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
+> set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+
+> set(CMAKE_C_FLAGS "-std=c99")
+
+> set(CMAKE_CXX_FLAGS "-std=c++11")
+
+> add_definitions("-std=c++11")
 
 
 # 12. 条件控制
