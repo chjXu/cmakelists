@@ -13,11 +13,10 @@
 > cmake_minimum_required(VERSION 3.10)
 
 # 2. 设置项目名称
-它会引起两个变量 demo_BINARY_DIR 和 demo_SOURCE_DIR;
-
-同时， cmake自动定义了两个等价的变量 PROJECT_BINARY_DIR 和 PROJECT_SOURCE_DIR.
+它会引起两个变量 demo_BINARY_DIR 和 demo_SOURCE_DIR; 同时， cmake自动定义了两个等价的变量 PROJECT_BINARY_DIR 和 PROJECT_SOURCE_DIR.
 
 > project(test)
+
 > project(test LANGUAGE C CXX CUDA)
 
 
