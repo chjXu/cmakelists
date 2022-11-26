@@ -87,25 +87,35 @@ exp 为空
 
 # 13. 常用变量
 ## 13.1 预定义变量
-> message(STATUS ${PROJECT_SOURCE_DIR})                   # 工程根目录 （/home/xcj/Desktop/cmkelists）
+工程根目录 （/home/xcj/Desktop/cmkelists）
+> message(STATUS ${PROJECT_SOURCE_DIR})                  
 
-> message(WARNING ${PROJECT_BINARY_DIR})                  # 运行 cmake 命令的目录 （/home/xcj/Desktop/cmkelists/build）
+运行 cmake 命令的目录 （/home/xcj/Desktop/cmkelists/build）
+> message(WARNING ${PROJECT_BINARY_DIR})                  
 
-> message(SEND_ERROR ${PROJECT_NAME})                     # 工程名称 （test）
+工程名称 （test）
+> message(SEND_ERROR ${PROJECT_NAME})                     
 
-> message(FATAL_ERROR ${CMAKE_CURRENT_SOURCE_DIR})        # 当前处理 CMakeLists.txt 所在的路径 （/home/xcj/Desktop/cmkelists）
+当前处理 CMakeLists.txt 所在的路径 （/home/xcj/Desktop/cmkelists）
+> message(FATAL_ERROR ${CMAKE_CURRENT_SOURCE_DIR})        
 
-> message(${CMAKE_CURRENT_BINARY_DIR})                    # target 编译目录 （/home/xcj/Desktop/cmkelists/build）
+target 编译目录 （/home/xcj/Desktop/cmkelists/build）
+> message(${CMAKE_CURRENT_BINARY_DIR})                    
 
-> message(${CMAKE_CURRENT_LIST_DIR})                      # CMakeLists.txt 的完整路径 （/home/xcj/Desktop/cmkelists）
+CMakeLists.txt 的完整路径 （/home/xcj/Desktop/cmkelists）
+> message(${CMAKE_CURRENT_LIST_DIR})                      
 
-> message(${CMAKE_CURRENT_LIST_LINE})                     # 当前所在行 （27）
+当前所在行 （27）
+> message(${CMAKE_CURRENT_LIST_LINE})                     
 
-> message(${CMAKE_MODULE_PATH})                           # 定义自己的 cmake 模块所在的路径 (/home/xcj/Desktop/cmkelists/cmake)
+定义自己的 cmake 模块所在的路径 (/home/xcj/Desktop/cmkelists/cmake)
+> message(${CMAKE_MODULE_PATH})                           
 
-> message(${EXECUTABLE_OUTPUT_PATH})                      # 重新定义目标二进制可执行文件的存放位置 (/home/xcj/Desktop/cmkelists/bin)
+重新定义目标二进制可执行文件的存放位置 (/home/xcj/Desktop/cmkelists/bin)
+> message(${EXECUTABLE_OUTPUT_PATH})                      
 
-> message(${LIBRARY_OUTPUT_PATH})                         # 重新定义目标链接库文件的存放位置 (/home/xcj/Desktop/cmkelists/lib)
+重新定义目标链接库文件的存放位置 (/home/xcj/Desktop/cmkelists/lib)
+> message(${LIBRARY_OUTPUT_PATH})                         
 
 
 ## 13.2 环境变量
@@ -116,24 +126,34 @@ $ENV{Name}
 
 
 ## 13.3 系统信息
-> message(${CMAKE_MAJOR_VERSION})         # cmake 主版本号 （3）
+cmake 主版本号 （3）
+> message(${CMAKE_MAJOR_VERSION})         
 
-> message(${CMAKE_MINOR_VERSION})         # cmake 次版本号 （16）
+cmake 次版本号 （16）
+> message(${CMAKE_MINOR_VERSION})         
 
-> message(${CMAKE_PATCH_VERSION})         # cmake 补丁等级 （3）
+cmake 补丁等级 （3）
+> message(${CMAKE_PATCH_VERSION})         
 
-> message(${CMAKE_SYSTEM})                # 系统名称 （Linux-5.15.0-53-generic）
+系统名称 （Linux-5.15.0-53-generic）
+> message(${CMAKE_SYSTEM})                
 
-> message(${CMAKE_SYSTEM_NAME})           # 不包含版本的系统名 （Linux）
+不包含版本的系统名 （Linux）
+> message(${CMAKE_SYSTEM_NAME})           
 
-> message(${CMAKE_SYSTEM_VERSION})        # 系统版本 （5.15.0-53-generic）
+系统版本 （5.15.0-53-generic）
+> message(${CMAKE_SYSTEM_VERSION})        
 
-> message(${CMAKE_SYSTEM_PROCESSOR})      # 处理器名称 （x86_64）
+处理器名称 （x86_64）
+> message(${CMAKE_SYSTEM_PROCESSOR})      
 
-> message(${UNIX})                        # 在所有的类 UNIX 平台下该值为 True，包括 OS X 和 cygwin （1）
+在所有的类 UNIX 平台下该值为 True，包括 OS X 和 cygwin （1）
+> message(${UNIX})                        
 
-> message(${WIN32})                       # 在所有的类 win32 平台下该值为 True，包括 cygwin （1）
+在所有的类 win32 平台下该值为 True，包括 cygwin （1）
+> message(${WIN32})                       
 
 
 # 14. 主要开关选项
-> option(BUILD_SHARED_LIBS "Build shared libraries" ON)   # 编译动态库
+编译动态库
+> option(BUILD_SHARED_LIBS "Build shared libraries" ON)   
