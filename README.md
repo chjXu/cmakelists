@@ -29,7 +29,7 @@ add_library 默认生成的是*静态库*
 # 5. 设置变量
 ## 5.1 set 直接设置变量的值
 把A设为B
-> set(A B)
+\* set(A B)
 
 ## 5.2 set 环境变量
 > set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
