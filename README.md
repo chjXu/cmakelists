@@ -23,7 +23,6 @@
 # 3. 设置编译类型
 add_library 默认生成的是*静态库*
 * add_library(utils STATIC ./test/utils.cc)
-
 * add_library(utils SHARED ./test/utils.cc)
 
 
