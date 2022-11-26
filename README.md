@@ -1,6 +1,6 @@
 # CMakeLists
 # 0. 编译
--S	指定源文件根目录，必须包含一个CMakeLists.txt文件
+-S	指定源文件根目录，必须包含一个CMakeLists.txt文件 
 
 -B	指定构建目录，构建生成的中间文件和目标文件的生成路径
 
@@ -46,9 +46,10 @@ add_library 默认生成的是静态库
 
 # 12. 条件控制
 ## 12.1 if...elseif...else...endif
-> if(expression)                          # expression 不为空
-
-> if(not exp)                             # exp 为空
+expression 不为空
+> if(expression)                          
+exp 为空
+> if(not exp)                             
 
 > if(var1 AND var2)
 
