@@ -21,14 +21,16 @@
 
 
 # 3. 设置编译类型
-add_library 默认生成的是静态库
-> add_library(utils STATIC ./test/utils.cc)
+add_library 默认生成的是*静态库*
+* add_library(utils STATIC ./test/utils.cc)
 
-> add_library(utils SHARED ./test/utils.cc)
+* add_library(utils SHARED ./test/utils.cc)
 
 
 # 5. 设置变量
 ## 5.1 set 直接设置变量的值
+把A设为B
+> set(A B)
 
 ## 5.2 set 环境变量
 > set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
