@@ -47,7 +47,8 @@ add_library 默认生成的是静态库
 # 12. 条件控制
 ## 12.1 if...elseif...else...endif
 expression 不为空
-> if(expression)                          
+> if(expression)   
+
 exp 为空
 > if(not exp)                             
 
@@ -55,24 +56,33 @@ exp 为空
 
 > if(var1 OR var2)
 
-> if(COMMAND cmd)                         # 如果 cmd 为命令，则为真
+如果 cmd 为命令，则为真
+> if(COMMAND cmd)                         
 
-> if(EXISTS dir/file)                     # 如果目录或文件存在为真
+如果目录或文件存在为真
+> if(EXISTS dir/file)                     
 
-> if(file1 IS_NEWER_THAN file2)           # 当 file1 比 file2 新时，为真
+当 file1 比 file2 新时，为真
+> if(file1 IS_NEWER_THAN file2)           
 
-> if(IS_DIRECTORY dir)                    # 当 dir 为目录时，为真
+当 dir 为目录时，为真
+> if(IS_DIRECTORY dir)                    
 
-> if(DEFINED var)                         # 如果变量被定义，为真
+如果变量被定义，为真
+> if(DEFINED var)                         
 
-> if(var MATCHES regex)                   # 正则表达式匹配
+正则表达式匹配
+> if(var MATCHES regex)                   
 
 ## 12.2 数字比较
-> if(variable LESS number)                # 小于
+小于
+> if(variable LESS number)               
 
-> if(variable GREATER number)             # 大于
+大于
+> if(variable GREATER number)             
 
-> if(variable EQUAL number)               # 等于
+等于
+> if(variable EQUAL number)               
 
 
 # 13. 常用变量
