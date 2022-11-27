@@ -41,17 +41,13 @@ add_library 默认生成的是 ***静态库***
 # 12. 条件控制
 ## 12.1 if...elseif...else...endif
 expression 不为空
-> if(expression)   
-
+* if(expression)   
 exp 为空
-> if(not exp)                             
-
-> if(var1 AND var2)
-
-> if(var1 OR var2)
-
+* if(not exp)                             
+* if(var1 AND var2)
+* if(var1 OR var2)
 如果 cmd 为命令，则为真
-> if(COMMAND cmd)                         
+* if(COMMAND cmd)                         
 
 如果目录或文件存在为真
 > if(EXISTS dir/file)                     
